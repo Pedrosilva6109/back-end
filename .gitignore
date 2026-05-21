@@ -1,0 +1,11 @@
+# Dependências (nunca subir)
+node_modules/
+
+# Banco de dados local (nunca subir)
+database.sqlite
+database.sqlite-journal
+
+# Arquivos de configuração do sistema e IDEs
+.env
+.DS_Store
+.vscode/
