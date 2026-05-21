@@ -52,5 +52,9 @@ app.get('/leads/:id', LeadController.show);
 app.put('/leads/:id', LeadController.update);
 app.delete('/leads/:id', LeadController.destroy);
 
-// Inicia o Servidor
-app.listen(3000, () => console.log('🚀 Servidor rodando CRUD completo em http://localhost:3000/api-docs'));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`🚀 Servidor online na porta ${PORT}`);
+    console.log(`Docs disponíveis em: http://localhost:${PORT}/api-docs`);
+});
